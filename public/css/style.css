@@ -279,7 +279,7 @@ margin: 10px;
   flex-direction: column;
   position: relative;
   z-index: 2;
-  background-image: url(../images/bg-img2.jpg);
+  background-image: url(../images/bg-img2.png);
   background-size: cover;
 }
 .section.b{
