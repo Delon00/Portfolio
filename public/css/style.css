@@ -9,7 +9,7 @@
 .colone{display: block; margin-left: auto; margin-right: auto;}
 .ligne{display: flex;}
 .ligne-center {display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;}
-h1{font-size: 40px;font-weight: 900;} h2,h3,p{font-family: 'Lexend-regular',sans-serif;}
+h1{font-size: 40px;font-weight: 900;} h2{font-size: 30px;font-weight: 900; font-family: 'Lexend-regular';} h3,p{font-family: 'Lexend-regular',sans-serif;}
 .span-text{color: rgb(255, 101, 45);}
 nav{
     justify-content: center;
@@ -287,11 +287,10 @@ margin: 10px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  position: relative;
   z-index: 2;
   background-color: black;
-   background-image: url(../images/bg-img3.jpg); 
-   background-size: cover; 
+  background-image: url(../images/bg-img3.jpg); 
+  background-size: cover; 
 }
 .section.b::before{
   content: "";
@@ -304,10 +303,15 @@ margin: 10px;
   /* Autres styles pour l'overlay */
 }
 .section.c{
-display: flex;
-height: 100vh;
-background-color: #595959;
-z-index: 998;
+  position: relative;
+  display: flex;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 998;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  padding: 2rem;
 }
 .titre{
 padding: 20px;
@@ -444,7 +448,17 @@ margin-right: 2%;
 display: flex;
 justify-content: center;
 align-items: center;
-
+}
+.card-form{
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.35);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(13px);
+-webkit-backdrop-filter: blur(13px);
+border: 1px solid #ffae35 ;
+height: 560px;
+width: 370px;
 }
 .image-slide{
   width: 100%;
