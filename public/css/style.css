@@ -481,7 +481,7 @@ align-items: center;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 50px;
+  height: 100dvh;
   display: flex;
 }
 
@@ -762,4 +762,8 @@ font-size: 25px;
 font-weight: 500;
   color: #ffffff;
 
+}
+.footer{
+  background-color: #000000;
+  color: #ffffff;
 }
