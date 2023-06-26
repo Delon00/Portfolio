@@ -69,6 +69,46 @@
       font-weight: 800;
       color: #ffffff;
     }
+    .card-competence{
+      height: 100px;
+      width: 300px;
+      }
+      .php{
+        height: 30px;
+        width: 50px;
+      }
+      .python{
+        height: 45px;
+        width: 45px;
+      }
+      .node{
+        height: 55px;
+        width: 55px;
+      }
+      .csharp{
+        height: 40px;
+        width: 40px;
+      }
+      .dart{
+        height: 40px;
+        width: 40px;
+        transition: transform 0.3s ease-out;
+      }
+      .hbs{
+        height: 40px;
+        width: 40px;
+        
+      }
+      .react{
+        width: 50px;
+        height: 50px;
+        
+      }
+      .js{
+        width: 40px;
+        height: 50px;
+      
+      }
 
 
 }
