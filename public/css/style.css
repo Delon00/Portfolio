@@ -426,7 +426,7 @@ border-radius: 20px;
 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 backdrop-filter: blur(14.6px);
 -webkit-backdrop-filter: blur(14.6px);
-height: 150px;
+height: 120px;
 width: 500px;
 margin-left: 2%;
 margin-right: 2%;
@@ -708,8 +708,8 @@ input::placeholder{
   margin-right: 2%;
 }
 .js{
-  width: 80px;
-  height: 100px;
+  width: 60px;
+  height: 80px;
    transition: transform 0.3s ease; /* Transition de transformation avec une durée de 0.3s */
 }
 
@@ -717,48 +717,48 @@ input::placeholder{
   transform: scale(1.2);
 }
 .react{
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   transition: transform 0.3s ease-in-out;
 }
 .react:hover{
   transform: scale(1.2);
 }
 .hbs{
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   transition: transform 0.3s ease-in;
 }
 .hbs:hover{
   transform: scale(1.2);
 }
 .dart{
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   transition: transform 0.3s ease-out;
 }
 .dart:hover{
   transform: scale(1.2);
 }
 .php{
-  height: 70px;
-  width: 120px;
+  height: 50px;
+  width: 100px;
 }
 .python{
+  height: 70px;
+  width: 70px;
+}
+.node{
   height: 90px;
   width: 90px;
 }
-.node{
-  height: 110px;
-  width: 110px;
-}
 .csharp{
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
 }
 .title-card-sectionb{
   position: relative;
-font-size: 30px;
+font-size: 25px;
 font-weight: 500;
   color: #ffffff;
 
