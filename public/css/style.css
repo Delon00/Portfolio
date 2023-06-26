@@ -453,7 +453,7 @@ align-items: center;
   /* From https://css.glass */
 background: rgba(255, 255, 255, 0.35);
 border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 backdrop-filter: blur(13px);
 -webkit-backdrop-filter: blur(13px);
 border: 1px solid #ffae35 ;
