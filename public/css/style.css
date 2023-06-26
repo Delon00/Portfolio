@@ -801,4 +801,10 @@ input::placeholder{
 }
 .colone-sectionform{
   width: 50%;
+  
+}
+.ligne-sectionform{
+  display: flex;
+  justify-self: center;
+  align-items: center;
 }
