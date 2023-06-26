@@ -459,6 +459,7 @@ backdrop-filter: blur(13px);
 border: 1px solid #ffae35 ;
 height: 560px;
 width: 370px;
+text-align: center;
 }
 .image-slide{
   width: 100%;
@@ -797,4 +798,7 @@ input::placeholder{
 .footer-title{
   font-family: 'MaPolice', sans-serif;
   font-size: 25px;
+}
+.colone-sectionform{
+  width: 50%;
 }
