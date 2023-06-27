@@ -217,17 +217,16 @@ border: 1px solid rgba(17, 16, 16, 1);
 margin: 10px;
 }
 .linkedin:hover{
-  
+  box-shadow: #de9818 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .github:hover{
-  width: 200%;
-  height: 200%;
+  box-shadow: #de9818 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .instagram{
-
+  box-shadow: #de9818 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .twitter{
-
+  box-shadow: #de9818 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .header::before {
@@ -311,7 +310,7 @@ margin: 10px;
   justify-content: center;
   align-items: center;
   color: #000000;
-  padding: 2rem;
+  padding: 3rem;
 }
 section.d{
   height: 100dvh;
@@ -322,13 +321,20 @@ padding: 20px;
 margin-left: 5%;
 margin-right: 22%;
 }
-.titre-sectionb{
+.titre-competence{
   padding: 20px;
   margin-left: 22%;
   margin-right: 5%;
   text-align: right;
   color: #ffffff;
   }
+  .titre-parcours{
+    padding: 20px;
+    margin-left: 5%;
+    margin-right: 22%;
+    text-align: left;
+    color: #ffffff;
+    }
 .card-container {
   width: 340px;
   height: 430px;
