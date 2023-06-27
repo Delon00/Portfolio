@@ -217,16 +217,16 @@ border: 1px solid rgba(17, 16, 16, 1);
 margin: 10px;
 }
 .linkedin:hover{
-  box-shadow: #de9818 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: #de9818(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .github:hover{
-  box-shadow: #de9818 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: #de9818(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.instagram{
-  box-shadow: #de9818 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+.instagram:hover{
+  box-shadow: #de9818(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.twitter{
-  box-shadow: #de9818 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+.twitter:hover{
+  box-shadow: #de9818(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .header::before {
@@ -310,7 +310,7 @@ margin: 10px;
   justify-content: center;
   align-items: center;
   color: #000000;
-  padding: 3rem;
+  padding: 2rem;
 }
 section.d{
   height: 100dvh;
@@ -470,9 +470,11 @@ border: 1px solid #ffae35 ;
 height: 560px;
 width: 370px;
 text-align: center;
+align-items: center;
+justify-content: center;
 }
 .card-form label{
-
+  text-align: left;
   font-weight: 400;
 }
 .card-form input{
@@ -578,7 +580,7 @@ form.cache {
 	justify-content: center;
 	flex-direction: column;
 	padding: 0 50px;
-	height: 100%;
+	height: 75%;
 	text-align: center;
   display: none;
 }
