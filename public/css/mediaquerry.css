@@ -118,6 +118,18 @@
       .colone-sectionform{
         width: 100%;
       }
+      .connection{
+        width :370px;
+       }
+       .overlay-connection{
+        display: none;
+       }
+       .sign-up-connection{
+       width :100%
+       }
+       .sign-in-connection{
+       width :100%
+       }
 
 
 }
