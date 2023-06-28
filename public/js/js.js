@@ -9,14 +9,14 @@ const toggleLabel = document.querySelector('.toggle');
     modal.classList.toggle('show');
   });
 
-  // Sélectionnez l'élément de fermeture du modal
-  const closeModal = document.querySelector('.close');
+  // // Sélectionnez l'élément de fermeture du modal
+  // const closeModal = document.querySelector('.close');
 
-  // Ajoutez un gestionnaire d'événements click à l'élément de fermeture du modal
-  closeModal.addEventListener('click', function() {
-    // Supprimez la classe "show" pour masquer le modal
-    modal.classList.remove('show');
-  });
+  // // Ajoutez un gestionnaire d'événements click à l'élément de fermeture du modal
+  // closeModal.addEventListener('click', function() {
+  //   // Supprimez la classe "show" pour masquer le modal
+  //   modal.classList.remove('show');
+  // });
 
 //------------------------CONEXION SLIDE
 const signUpButton = document.getElementById('signUp');
