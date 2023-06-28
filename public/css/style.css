@@ -310,7 +310,7 @@ margin: 10px;
   justify-content: center;
   align-items: center;
   color: #000000;
-  padding: 2rem;
+
 }
 section.d{
   height: 100dvh;
@@ -467,7 +467,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(11px);
 -webkit-backdrop-filter: blur(11px);
 border: 1px solid rgba(255, 174, 0, 0.3);
-height: 520px;
+height: 500px;
 width: 370px;
 display: flex;
 flex-wrap: wrap;
@@ -483,6 +483,12 @@ justify-content: center;
 }
 .card-form input{
   color: #000000;
+}
+.card-form textarea.message{
+  background-color: #ffffff00;
+  border: 2px solid orange;
+  border-radius: 12px;
+  margin: 8px 0;
 }
 .image-slide{
   width: 100%;
@@ -573,8 +579,8 @@ form {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding: 0 50px;
-	height: 75%;
+	padding: 10px 50px;
+	height: auto;
 	text-align: center;
 }
 form.cache {
@@ -824,10 +830,15 @@ input::placeholder{
 }
 .colone-sectionform{
   width: 50%;
-  
+}
+.titre-sectionform{
+  margin: 35px
 }
 .ligne-sectionform{
   display: flex;
   justify-self: center;
   align-items: center;
+}
+.titre-form{
+  margin-bottom: 20px;
 }
