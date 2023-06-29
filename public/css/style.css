@@ -784,8 +784,8 @@ input::placeholder{
   margin-right: 2%;
 }
 .js{
-  width: 60px;
-  height: 80px;
+  width: 50px;
+  height: 60px;
    transition: transform 0.3s ease; /* Transition de transformation avec une durée de 0.3s */
 }
 
@@ -793,8 +793,8 @@ input::placeholder{
   transform: scale(1.2);
 }
 .react{
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   transition: transform 0.3s ease-in-out;
 }
 .react:hover{
@@ -818,7 +818,7 @@ input::placeholder{
 }
 .php{
   height: 50px;
-  width: 100px;
+  width: 80px;
   transition: transform 0.3s ease-out;
 }
 .php:hover{
@@ -828,6 +828,9 @@ input::placeholder{
   height: 70px;
   width: 70px;
   transition: transform 0.3s ease-out;
+}
+.python:hover{
+  transform: scale(1.2);
 }
 .node{
   height: 90px;

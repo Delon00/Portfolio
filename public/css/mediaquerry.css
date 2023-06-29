@@ -94,7 +94,7 @@
         width: 40px;
         transition: transform 0.3s ease-out;
       }
-      .hbs{
+      .java{
         height: 40px;
         width: 40px;
         
@@ -136,12 +136,14 @@
         font-size: 12px;
       }
       .parcours{
-        width: 300px;
+        width: 380px;
       }
       .card-competence{
         height: 80px;
         width: 320px;
         overflow: scroll;
+        margin-top: 5px;
+        margin-bottom: 5px;
       }
      
 
@@ -257,7 +259,7 @@
       z-index: 2;
       position: absolute;
       bottom: -4px;
-      height: 300px;
+      height: 280px;
       width: 100%;
     }
     .card-container {
