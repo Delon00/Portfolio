@@ -803,7 +803,7 @@ input::placeholder{
 .java{
   height: 60px;
   width: 60px;
-  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-out;
 }
 .java:hover{
   transform: scale(1.2);
@@ -819,6 +819,7 @@ input::placeholder{
 .php{
   height: 50px;
   width: 100px;
+  transition: transform 0.3s ease-out;
 }
 .php:hover{
   transform: scale(1.2);
@@ -826,14 +827,20 @@ input::placeholder{
 .python{
   height: 70px;
   width: 70px;
+  transition: transform 0.3s ease-out;
 }
 .node{
   height: 90px;
   width: 90px;
+  transition: transform 0.3s ease-out;
+}
+.node:hover{
+  transform: scale(1.2);
 }
 .csharp{
   height: 60px;
   width: 60px;
+  transition: transform 0.3s ease-out;
 }
 .title-card-sectionb{
   position: relative;
