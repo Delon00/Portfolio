@@ -27,7 +27,6 @@ color: #FFFFFF;
   color: darkorange;
 }
 .navbarglass{
-    /* From https://css.glass */
     -webkit-backdrop-filter: blur(8.4px);
     background: rgba(255, 255, 255, 0.37);
     border-radius: 16px;
@@ -48,7 +47,6 @@ color: #FFFFFF;
     margin-top: 8rem;
     position: fixed;
     z-index: 999;
-
 }
 @keyframes navglow {
     from {
@@ -299,13 +297,14 @@ margin: 10px;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.637); /* Couleur de l'overlay et opacité */
+  background-color: rgba(0, 0, 0, 0.749); /* Couleur de l'overlay et opacité */
   /* Autres styles pour l'overlay */
 }
 .section.c{
   position: relative;
   display: flex;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(224, 226, 228) 100.2%);
   z-index: 998;
   justify-content: center;
@@ -324,8 +323,6 @@ margin-right: 22%;
 }
 .titre-competence{
   padding: 20px;
-  margin-left: 22%;
-  margin-right: 5%;
   text-align: right;
   color: #ffffff;
   }
@@ -469,8 +466,6 @@ margin-right: 22%;
   -webkit-backdrop-filter: blur(12.7px);
   height:300px;
   width: 300px;
-  margin-left: 2%;
-  margin-right: 2%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
