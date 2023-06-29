@@ -800,12 +800,12 @@ input::placeholder{
 .react:hover{
   transform: scale(1.2);
 }
-.hbs{
+.java{
   height: 60px;
   width: 60px;
   transition: transform 0.3s ease-in;
 }
-.hbs:hover{
+.java:hover{
   transform: scale(1.2);
 }
 .dart{
@@ -819,6 +819,9 @@ input::placeholder{
 .php{
   height: 50px;
   width: 100px;
+}
+.php:hover{
+  transform: scale(1.2);
 }
 .python{
   height: 70px;
