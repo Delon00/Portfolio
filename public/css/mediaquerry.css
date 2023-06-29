@@ -130,6 +130,20 @@
        .sign-in-connection{
        width :100%
        }
+       .content p.card-text{
+        width: 120px;
+        height: 22px;
+        font-size: 12px;
+      }
+      .parcours{
+        width: 300px;
+      }
+      .card-competence{
+        height: 80px;
+        width: 320px;
+        overflow: scroll;
+      }
+     
 
 
 }
@@ -174,6 +188,14 @@
     }
 
 }
+@media screen and (max-width:620px) {
+  .text-mobile{
+    display: contents;
+  }
+  .text-pc{
+    display: none;
+  }
+}
 @media screen and (max-width: 557px) {
     .header-title{
       font-size: 80px;
@@ -213,6 +235,7 @@
       font-weight: 800;
       color: #ffffff;
     }
+    
   
 }
 @media screen and (max-width: 450px) {
