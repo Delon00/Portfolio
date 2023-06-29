@@ -97,6 +97,7 @@
       .java{
         height: 40px;
         width: 40px;
+        display: block;
         
       }
       .react{
@@ -105,9 +106,17 @@
         
       }
       .js{
-        width: 40px;
-        height: 50px;
+        width: 35px;
+        height: 40px;
       
+      }
+      .photoshop{
+        width: 40px;
+        height: 40px;
+      }
+      .figma{
+        width: 40px;
+        height: 45px;
       }
       .ligne-sectionform{
         display: flex;
@@ -142,8 +151,8 @@
         height: 80px;
         width: 320px;
         overflow: scroll;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-top: 10%;
+        margin-bottom: 10%;
       }
      
 

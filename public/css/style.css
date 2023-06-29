@@ -476,6 +476,7 @@ margin-right: 22%;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 2px;
 }
 .card-form{
 /* From https://css.glass */
@@ -804,13 +805,14 @@ input::placeholder{
   height: 60px;
   width: 60px;
   transition: transform 0.3s ease-out;
+  display: none;
 }
 .java:hover{
   transform: scale(1.2);
 }
 .dart{
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   transition: transform 0.3s ease-out;
 }
 .dart:hover{
@@ -844,6 +846,25 @@ input::placeholder{
   height: 60px;
   width: 60px;
   transition: transform 0.3s ease-out;
+}
+.csharp:hover{
+  transform: scale(1.2);
+}
+.photoshop{
+  height: 60px;
+  width: 60px;
+  transition: transform 0.3s ease-out;
+}
+.photoshop:hover{
+  transform: scale(1.2);
+}
+.figma{
+  height: 60px;
+  width: 65px;
+  transition: transform 0.3s ease-out;
+}
+.figma:hover{
+  transform: scale(1.2);
 }
 .title-card-sectionb{
   position: relative;
