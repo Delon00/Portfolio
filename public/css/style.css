@@ -20,8 +20,8 @@ nav{
   font-family: 'Lexend-regular';
   font-size: 20px;
   font-weight: bold;
-  text-shadow: 0 0 1px #FFF, 0 0 1px #FFF, 0 0 1px #FFF, 0 0 1px #ffffff, 0 0 1px #de9818, 0 0 1px #de9818, 0 0 5px #de9818, 0 0 1px #de9818;
-color: #FFFFFF;
+  text-shadow: 0 0 1px #FFF, 0 0 1px #FFF, 0 0 1px #FFF, 0 0 1px #ffffff, 0 0 1px #de9818, 0 0 1px #de9818, 0 0 1px #de9818, 0 0 1px #de9818;
+  color: #FFFFFF;
 }
 .nav-link:hover{
   color: darkorange;
