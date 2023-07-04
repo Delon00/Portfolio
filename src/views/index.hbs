@@ -47,10 +47,12 @@
             </div>
             <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="1400" class="card-container">
               <div class="card">
-                <div class="img-content"><img class="projet-image" src="images/projet4.png" alt=""></div>
-                <div class="content">
-                <p class="heading" style="color: #7b817c;">Code de réussite</p>
-                <p>Livre de formation pour devenir un developpeur chevroné"</p>
+                <a href="#" id="mon-lien">
+                  <div class="img-content"><img class="projet-image" src="images/projet4.png" alt=""></div>
+                  <div class="content">
+                  <p class="heading" style="color: #7b817c;">Code de réussite</p>
+                  <p>Livre de formation pour devenir un developpeur chevroné"</p>
+                </a>
               </div>
               </div>
           </div>
@@ -67,26 +69,53 @@
               </a>
             </div>
           </div>
+
           <div data-aos="fade-up" data-aos-duration="1800" data-aos-anchor-placement="top-bottom" class="card-container-small">
             <div class="card">
               <div class="img-content"><img class="projet-image" src="images/projet6.png" alt=""></div>
-               <div class="content">
-              <p class="heading" style="color: #ffabdb; ">Guapo store</p>
-              <p>Affiche Guapo store </p>
-            </div>
-            </div>
+                <div class="content">
+                  <p class="heading" style="color: #ffabdb; ">Guapo store</p>
+                  <p>Affiche Guapo store </p>
+                </div>
+              </div>
           </div>
           
           <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom" class="card-container">
             <div class="card">
               <div class="img-content"><img class="projet-image" src="images/projet3.png" alt=""></div>
-               <div class="content">
-              <p class="heading" style="color: #e9e357;">Delon graphics</p>
-              <p>Affiche publicitaire</p>
+                <div class="content">
+                  <p class="heading" style="color: #e9e357;">Delon graphics</p>
+                  <p>Affiche publicitaire</p>
+                </div>
+              </div>
             </div>
-            </div>
-           </div>
           </div>
+                                              <!-------------- Modal ------------------->
+                                          <div id="mon-modal" class="modal">
+                                            <div class="modal-content">
+                                              <span class="close">&times;</span>
+                                              <div class="img-content"><img class="projet-image" src="images/projet4.png" alt=""></div>
+                                            </div>
+                                          </div>
+                                          <script>
+                                                    // Récupérer le lien et le modal
+                                                    var lien = document.getElementById("mon-lien");
+                                                    var modal = document.getElementById("mon-modal");
+
+                                                    // Ajouter un gestionnaire d'événements au clic sur le lien
+                                                    lien.addEventListener("click", function(event) {
+                                                      event.preventDefault(); // Empêche le lien de recharger la page
+
+                                                      // Afficher le modal
+                                                      modal.style.display = "block";
+                                                    });
+
+                                                    // Ajouter un gestionnaire d'événements pour fermer le modal
+                                                    var closeBtn = document.getElementsByClassName("close")[0];
+                                                    closeBtn.addEventListener("click", function() {
+                                                      modal.style.display = "none";
+                                                    });
+                                        </script>
         </section>
 
         <section class="section b">
