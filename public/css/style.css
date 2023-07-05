@@ -455,6 +455,7 @@ margin-right: 22%;
 .projet-image{
     object-fit: cover;
 }
+
 .parcours{
   background: transparent;
   font-size: 14px;
@@ -467,6 +468,64 @@ margin-right: 22%;
   text-align: left;
   color: #ffffff;
 }
+.parcours-forms{
+  height: 80px;
+  width: 500px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 9%;
+  margin-right: 9%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-size: 17px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.colone-parcours-forms{
+  display: block;
+  width: 100%;
+}
+
+.ligne-parcours-forms.a{
+  display: flex;
+  justify-content: flex-start;
+}
+.ligne-parcours-forms.b{
+  display: flex;
+  justify-content: flex-end;
+}
+.ligne-parcours-forms.c{
+  display: flex;
+  justify-content: flex-start;
+}
+.ligne-parcours-forms.d{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.parcours-forms.a{
+
+}
+.parcours-forms.b{
+
+}
+
+.parcours-forms.c{
+
+}
+.parcours-forms.d{
+
+}
+  
+
 .text-mobile{
   display: none;
 }
