@@ -86,7 +86,7 @@ border: 1px solid rgba(17, 16, 16, 1);
 .modal {
     display: none; /* masquer par défaut */
     position: fixed; /* fixer la position pour qu'elle reste centrée */
-    z-index: 997; /* placer le modal au-dessus du reste de la page */
+    z-index: 998; /* placer le modal au-dessus du reste de la page */
     left: 0;
     top: 0;
     width: 100%;
@@ -204,7 +204,7 @@ border: 1px solid rgba(17, 16, 16, 1);
 
 .header-link{
   position: absolute;
-  z-index: 999;
+  z-index: 997;
   right: 50px;
   width: 35px;
   height: 35px;
