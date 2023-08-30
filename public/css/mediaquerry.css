@@ -54,8 +54,8 @@
     .card-container {
       width: 160px;
       height: 205px;
-
     }
+    
     .card-container-small {
       width: 160px;
       height: 160px;
@@ -271,6 +271,11 @@
       bottom: -4px;
       height: 280px;
       width: 100%;
+    }
+    .btn-download{
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .card-container {
       width: 160px;

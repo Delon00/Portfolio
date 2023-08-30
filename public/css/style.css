@@ -553,13 +553,14 @@ backdrop-filter: blur(11px);
 -webkit-backdrop-filter: blur(11px);
 border: 1px solid rgba(255, 174, 0, 0.3);
 height: 500px;
-width: 370px;
+width: 340px;
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
 text-align: center;
 align-items: center;
 justify-content: center;
+margin-bottom: 10px;
 
 }
 .card-form label{
@@ -637,6 +638,10 @@ button {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
+}
+.btn-download{
+  margin-top: 3%;
+  width: 100%;
 }
 button:hover{
   transform: scale(1.1);
