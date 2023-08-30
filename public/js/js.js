@@ -1,20 +1,19 @@
 //------------------------MENU
-const toggleLabel = document.querySelector('.toggle');
+// Obtenez les éléments nécessaires
+const checkbox = document.getElementById('checkbox');
 const menu = document.getElementById('myModal');
-const openMenu = document.querySelector('.off');
-const closeMenu = document.querySelector('.on');
 
-toggleLabel.addEventListener('click', function() {
-  menu.classList.add('show');
-  openMenu.classList.add('on');
-  openMenu.classList.remove('off');
+// Ajoutez un écouteur d'événement pour le changement de l'état du checkbox
+checkbox.addEventListener('change', function() {
+  if (this.checked) {
+    // Si le checkbox est coché, affichez le modal
+    menu.style.display = 'block';
+  } else {
+    // Sinon, cachez le modal
+    menu.style.display = 'none';
+  }
 });
 
-closeMenu.addEventListener('click', function() {
-  menu.classList.remove('show');
-  closeMenu.classList.add('off');
-  closeMenu.classList.remove('on');
-});
 
 
 //------------------------CONEXION SLIDE
