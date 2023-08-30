@@ -1,12 +1,17 @@
 //------------------------MENU
 const toggleLabel = document.querySelector('.toggle');
 const menu = document.getElementById('myModal');
+const toggle = document.querySelector('.off')
 toggleLabel.addEventListener('click', function(){
     menu.classList.add('show');
+    toggle.classList.remove('off')
+    toggle.classList.add('on')
   });
-const closeMenu = document.querySelector('.close');
+const closeMenu = document.querySelector('.on');
 closeMenu.addEventListener('click', function() {
   menu.classList.remove('show');
+  toggle.classList.remove('on')
+  toggle.classList.add('off')
 });
 
 //------------------------CONEXION SLIDE
