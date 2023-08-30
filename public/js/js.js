@@ -1,18 +1,21 @@
 //------------------------MENU
 const toggleLabel = document.querySelector('.toggle');
 const menu = document.getElementById('myModal');
-const toggle = document.querySelector('.off')
-toggleLabel.addEventListener('click', function(){
-    menu.classList.add('show');
-    toggle.classList.remove('off')
-    toggle.classList.add('on')
-  });
+const openMenu = document.querySelector('.off');
 const closeMenu = document.querySelector('.on');
+
+toggleLabel.addEventListener('click', function() {
+  menu.classList.add('show');
+  openMenu.classList.add('on');
+  openMenu.classList.remove('off');
+});
+
 closeMenu.addEventListener('click', function() {
   menu.classList.remove('show');
-  toggle.classList.remove('on')
-  toggle.classList.add('off')
+  closeMenu.classList.add('off');
+  closeMenu.classList.remove('on');
 });
+
 
 //------------------------CONEXION SLIDE
 const signUpButton = document.getElementById('signUp');
