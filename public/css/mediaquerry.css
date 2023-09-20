@@ -247,12 +247,15 @@
       font-weight: 800;
       color: #ffffff;
     }
+    form{
+      padding: 0px;
+    }
     
   
 }
 @media screen and (max-width: 450px) {
   .header-title{
-    font-size: 70px;
+    font-size: 60px;
   }
     .navbarglass {
     width: 360px;
@@ -300,7 +303,25 @@
        display: flex;
        flex-wrap: wrap;
     }
-
+    .parcours{
+      width: 100%;
+      max-width: 100%;
+    }
+    .card-competence{
+      width:300px;
+      max-width:100%;
+    }
+    html{
+      max-width: 100vw;
+    }
+    .card-form{
+      width: 300px;
+    
+    }
+    .colone-sectionform{
+      max-width: 400px;
+    }
+    
 }
 @media screen and (max-width: 360px) {
     .navbarglass {
@@ -337,10 +358,7 @@
       font-weight: 800;
       color: #ffffff;
     }
-    html{
-      min-width: 100vw;
-    }
-    
+
 
 }
 @media screen and (max-width: 330px) {
@@ -380,6 +398,11 @@
       font-weight: 800;
       color: #ffffff;
     }
+    .header-title{
+      font-size: 55px;
+    }
+
+    
 }
 @media screen and (max-width: 280px) {
   .navbarglass {
@@ -409,6 +432,7 @@
     font-weight: 800;
     color: #ffffff;
   }
+
 }
 @media screen and (max-width: 260px) {
   .navbarglass {
