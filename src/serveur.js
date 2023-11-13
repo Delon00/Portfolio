@@ -4,6 +4,8 @@ const fs = require('fs');
 const {engine} = require ('express-handlebars');
 const mongoose = require('mongoose');
 const app = express();
+const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
 
 
 
@@ -61,9 +63,37 @@ app.get('/*', (_,res) => {
     res.render(path.join(__dirname,'views','404.hbs'));
 })
 
+app.use(bodyParser.urlencoded({ extended: true }));
 
+app.post('/send-email', (req, res) => {
+    const { nom, email, message } = req.body;
 
+    // Configuration du transporteur e-mail (utilisez votre propre configuration SMTP)
+    const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: 'djplebob32@gmail.com', // Mettez votre adresse e-mail Gmail
+            pass: 'ejws zrfb djfi qyiu' // Mettez votre mot de passe Gmail
+        }
+    });
 
+    // Paramètres du mail
+    const mailOptions = {
+        from: 'djplebob32@gmail.com', // Mettez votre adresse e-mail Gmail
+        to: 'jeanfr12@live.fr', // Mettez l'adresse e-mail de réception
+        subject: 'Portfolio contact',
+        text: `Nom: ${nom}\nEmail: ${email}\nMessage: ${message}`
+    };
+
+    // Envoi du mail
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return console.error(error);
+        }
+        console.log('Email envoyé :', info.response);
+        res.redirect('/'); // Redirection vers la page du formulaire
+    });
+});
 
 
 app.listen(PORT, () => {

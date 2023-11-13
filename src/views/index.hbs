@@ -184,13 +184,13 @@ $              </div>
           <div class="colone">
             <div class="card-form" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1400">
               <h2 class="titre-form">Formulaire</h2>
-              <form action="">
-                <input name="nom" type="text" placeholder="Nom">
-                <input name="email" type="email" placeholder="Email">
-                <label for="text">message:</label>
-                <textarea class="message" name="" id="" cols="30" rows="5" ></textarea>
-                <button>Envoyer</button>
-            </form>
+              <form action="/send-email" method="post">
+                  <input name="nom" type="text" placeholder="Nom" required>
+                  <input name="email" type="email" placeholder="Email" required>
+                  <label for="text">Message:</label>
+                  <textarea class="message" name="message" id="" cols="30" rows="5" required></textarea>
+                  <button type="submit">Envoyer</button>
+              </form>
             </div>
             <br>
           </div>
