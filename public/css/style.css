@@ -892,7 +892,7 @@ input::placeholder{
 }
 .php{
   height: 50px;
-  width: 80px;
+  width: 50px;
   transition: transform 0.3s ease-out;
 }
 .php:hover{
