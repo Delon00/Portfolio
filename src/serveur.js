@@ -54,7 +54,9 @@ app.get('/mediaquerry', (req, res) => {
 app.get('/js', (req, res) => {
     res.sendFile(path.join(__dirname,'../', 'public', 'js', 'js.js'));
 });
-
+app.get('/CV-DELON', (req, res) => {
+    res.sendFile(path.join(__dirname,'views', 'CV-DELON.pdf'));
+});
 app.get('/*', (_,res) => {
     res.render(path.join(__dirname,'views','404.hbs'));
 })
