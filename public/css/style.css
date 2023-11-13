@@ -543,6 +543,8 @@ margin-right: 22%;
   justify-content: center;
   align-items: center;
   padding: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .card-form{
 /* From https://css.glass */
@@ -883,8 +885,10 @@ input::placeholder{
   transform: scale(1.2);
 }
 .dart{
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
+  margin-left: 2%;
+  margin-right: 2%;
   transition: transform 0.3s ease-out;
 }
 .dart:hover{

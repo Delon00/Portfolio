@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const app = express();
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
+const ejs = require('ejs');
 
 
 
@@ -28,7 +29,7 @@ app.engine('hbs', engine({
         defaultLayout:'main',
         layoutsDir: path.join(__dirname, 'views', 'layouts') 
     }));
-app.set('view engine', 'hbs');
+app.set('view engine', 'hbs','ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname,'../', 'public')));
 app.use('/views', express.static(path.join(__dirname,'src', 'views')));
@@ -62,18 +63,21 @@ app.get('/CV-DELON', (req, res) => {
 app.get('/*', (_,res) => {
     res.render(path.join(__dirname,'views','404.hbs'));
 })
+app.get('/', (req, res) => {
+    const message = req.query.message || '';
+    res.render('index', { message });
+});
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/send-email', (req, res) => {
     const { nom, email, message } = req.body;
-
-    // Configuration du transporteur e-mail (utilisez votre propre configuration SMTP)
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'djplebob32@gmail.com', // Mettez votre adresse e-mail Gmail
-            pass: 'ejws zrfb djfi qyiu' // Mettez votre mot de passe Gmail
+            user: 'djplebob32@gmail.com',
+            pass: 'ejws zrfb djfi qyiu'
         }
     });
 
@@ -91,7 +95,7 @@ app.post('/send-email', (req, res) => {
             return console.error(error);
         }
         console.log('Email envoyé :', info.response);
-        res.redirect('/'); // Redirection vers la page du formulaire
+        res.redirect('/?message=Email%20envoyé%20avec%20succès'); 
     });
 });
 
