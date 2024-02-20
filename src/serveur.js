@@ -1,9 +1,9 @@
 const express = require('express');
+const app = express(); 
 const path = require('path');
 const fs = require('fs');
 const {engine} = require ('express-handlebars');
 const mongoose = require('mongoose');
-const app = express();
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
@@ -11,7 +11,7 @@ const ejs = require('ejs');
 
 
 const PORT = process.env.PORT || 8080;
-const lang = process.env.LANG.slice(0, 2);
+const LANG = process.env.LANG.slice(0, 2);
 //-------------------------------------------------------LOG DATABASE
 (async () => {
     try {
@@ -32,6 +32,7 @@ app.engine('hbs', engine({
 app.set('view engine', 'hbs','ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname,'../', 'public')));
+app.use(express.static(path.join(__dirname,'../', 'client','build')));
 app.use('/views', express.static(path.join(__dirname,'src', 'views')));
 
 //--------------------------------------------------------------ROUTES
