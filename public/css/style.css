@@ -302,7 +302,7 @@ margin: 10px;
   width: 100%;
   padding:2rem;
 }
-.about-me h1{color: #ffae35; margin: 0.5rem 0;}
+.about-me h1{color: #ffae35; margin: 0.5rem 0;text-align: left;}
 .competences{
   width: 100%;
   padding:2rem;
