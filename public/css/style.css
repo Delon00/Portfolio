@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'MaPolice';
   src: url('../font/edunline.ttf') format('truetype');
@@ -18,7 +19,7 @@ nav{
 }
 .nav-link{
   font-family: 'Lexend-regular';
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   padding:0 1rem;
   background-color: #ffffff3f;
@@ -976,4 +977,92 @@ input::placeholder{
 }
 .titre-form{
   margin-bottom: 20px;
+}
+.section-b {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.container {
+  display: grid;
+  gap: 2.5rem;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-image {
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.profile-info h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.role {
+  color: gray;
+}
+
+.about h3, .competencies h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.about p, .competency-description {
+  color: gray;
+}
+
+.competencies {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.competency-section {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.competency-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.competency-item {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.competency-title {
+  font-size: 0.875rem;
+  font-weight: 500;
 }
