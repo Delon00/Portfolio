@@ -987,7 +987,14 @@ input::placeholder{
   width: 50%;
 }
 .titre-sectionform{
-  margin: 35px
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+.titre-sectionform a{
+  margin: 1rem 0;
 }
 .ligne-sectionform{
   display: flex;
