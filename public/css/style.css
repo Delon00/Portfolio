@@ -20,18 +20,22 @@ nav{
   font-family: 'Lexend-regular';
   font-size: 20px;
   font-weight: bold;
-  text-shadow: 0 0 1px #FFF, 0 0 1px #FFF, 0 0 1px #FFF, 0 0 1px #ffffff, 0 0 1px #de9818, 0 0 1px #de9818, 0 0 1px #de9818, 0 0 1px #de9818;
-  color: #FFFFFF;
+  padding:0 1rem;
+  background-color: #ffffff3f;
+  color: #000;
+  border-radius: 20px;
+  margin: 0 0.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 .nav-link:hover{
   color: darkorange;
 }
 .navbarglass{
-    -webkit-backdrop-filter: blur(8.4px);
-    background: rgba(255, 255, 255, 0.37);
-    border-radius: 16px;
+    -webkit-backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 20px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8.4px);
+    backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.32);
     transition: .5s;
     transition-duration: 1s;
