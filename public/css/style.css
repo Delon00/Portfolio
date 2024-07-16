@@ -7,6 +7,7 @@
   font-family: 'Lexend-regular';
   src: url('../font/Lexend-Regular.ttf') format('truetype');
 }
+.grid-cols-2 {grid-template-columns: repeat(2, 1fr);}
 .colone{display: block; margin-left: auto; margin-right: auto;}
 .ligne{display: flex;}
 .ligne-center {display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap; width: 100%;}
@@ -284,27 +285,45 @@ margin: 10px;
 }
 .section.b{
   position: relative;
+  background: rgb(0,0,0);
+  background: linear-gradient(135deg, rgba(0,0,0,1) 24%, rgba(15,15,16,1) 50%);
   width: 100%;
   height: auto;
   min-height: 100vh;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   z-index: 2;
-  background-color: black;
-  background-image: url(../images/bg-img3.jpg); 
-  background-size: cover; 
+  padding: 2rem;
 }
-.section.b::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.about-me{
+  color: #fff;
+  text-align: justify;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.817); /* Couleur de l'overlay et opacité */
-  /* Autres styles pour l'overlay */
+  padding:2rem;
 }
+.about-me h1{color: #ffae35; margin: 0.5rem 0;}
+.competences{
+  width: 100%;
+  padding:2rem;
+  color: #fff;
+}
+.card-competence-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  justify-items: center;
+  grid-gap: 5px;
+  margin: 1rem 0;
+}
+.cards-competences{
+  width: 140px;
+  padding: 1rem;
+  background-color: #212123;
+  border-radius: 15px;
+  border:1px solid  #000;
+  text-align: center;
+}
+
 .section.c{
   position: relative;
   display: flex;
@@ -978,91 +997,4 @@ input::placeholder{
 .titre-form{
   margin-bottom: 20px;
 }
-.section-b {
-  width: 100%;
-  padding: 3rem 0;
-}
 
-.container {
-  display: grid;
-  gap: 2.5rem;
-  padding: 0 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  grid-template-columns: 1fr;
-}
-
-.profile {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.profile-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.profile-image {
-  flex-shrink: 0;
-  overflow: hidden;
-  border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
-}
-
-.profile-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.profile-info {
-  display: grid;
-  gap: 0.25rem;
-}
-
-.profile-info h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.role {
-  color: gray;
-}
-
-.about h3, .competencies h3 {
-  font-size: 1.125rem;
-  font-weight: 600;
-}
-
-.about p, .competency-description {
-  color: gray;
-}
-
-.competencies {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.competency-section {
-  display: grid;
-  gap: 0.5rem;
-}
-
-.competency-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.competency-item {
-  display: grid;
-  gap: 0.25rem;
-}
-
-.competency-title {
-  font-size: 0.875rem;
-  font-weight: 500;
-}

@@ -69,55 +69,7 @@
       font-weight: 800;
       color: #ffffff;
     }
-    .card-competence{
-      height: 100px;
-      width: 300px;
-      }
-      .php{
-        height: 30px;
-        width: 30px;
-      }
-      .python{
-        height: 45px;
-        width: 45px;
-      }
-      .node{
-        height: 55px;
-        width: 55px;
-      }
-      .csharp{
-        height: 40px;
-        width: 40px;
-      }
-      .dart{
-        height: 40px;
-        width: 40px;
-        transition: transform 0.3s ease-out;
-      }
-      .java{
-        height: 40px;
-        width: 40px;
-        display: block;
-        
-      }
-      .react{
-        width: 50px;
-        height: 50px;
-        
-      }
-      .js{
-        width: 35px;
-        height: 40px;
-      
-      }
-      .photoshop{
-        width: 40px;
-        height: 40px;
-      }
-      .figma{
-        width: 40px;
-        height: 45px;
-      }
+    .section.b{flex-wrap: wrap;}
       .ligne-sectionform{
         display: flex;
         flex-wrap: wrap;
@@ -247,9 +199,8 @@
       font-weight: 800;
       color: #ffffff;
     }
-    form{
-      padding: 0px;
-    }
+    form{padding: 0px;}
+    .competences{padding: 0rem;}
     
   
 }

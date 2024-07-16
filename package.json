@@ -1,11 +1,11 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mon portfolio",
   "main": "src/serveur.js",
   "scripts": {
-    "start": "node index",
-    "app": "nodemon index"
+    "start": "node src/serveur.js",
+    "app": "nodemon src/serveur.js"
   },
   "author": "Louis Delon",
   "license": "ISC",
